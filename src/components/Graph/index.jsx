@@ -23,15 +23,16 @@ export const Graph = () => {
       return;
     }
     // run d3-force to find the position of nodes on the canvas
-    const simulation = d3.forceSimulation(nodes)
+    d3.forceSimulation(nodes)
       // list of forces we apply to get node positions
       .force('link', d3.forceLink(links).id((d) => d.id))
       .force('collide', d3.forceCollide().radius(80).strength(1))
       .force('charge', d3.forceManyBody())
       .force('center', d3.forceCenter(width / 2, (height - 80) / 2))
 
-    drawNetwork(context, width, height, nodes, links)
-    simulation.tick(300)
+      .on('tick', () => {
+        drawNetwork(context, width, height, nodes, links);
+      });
   }, [nodes, links]);
 
   return (
@@ -40,7 +41,7 @@ export const Graph = () => {
         <canvas
           ref={canvasRef}
           width={width}
-          height={height - 115}
+          height={height - 30}
         />
       </div>
     </div>
