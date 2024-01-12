@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+
+a {
+    text-decoration: unset;
+    color: inherit;
+    appearance: none;
+}
+
+h4 {
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 30px 40px;
+}

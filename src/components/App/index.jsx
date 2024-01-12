@@ -1,10 +1,16 @@
+import React from 'react';
+import { Header } from '../Header'
+import { Main } from "../Main";
+import './style.css'
+import { BrowserRouter as Router, } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div >
-     hello
-    </div>
-  );
+    <Router>
+      <Header/>
+      <Main/>
+    </Router>
+  )
 }
 
 export default App;

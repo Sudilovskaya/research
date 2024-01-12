@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    { "id": "1", "group": "team1", "name": "CRM-система"},
+    {"id": "2", "group": "team1", "name": "Облачная CRM"},
+    {"id": "3", "group": "team1", "name": "Внедрение"},
+    {"id": "4", "group": "team4", "name": "API"},
+    {"id": "5", "group": "team6", "name": "База данных"},
+    {"id": "6", "group": "team6", "name": "Фреймворк"},
+    {"id": "7", "group": "team2", "name": "Тестирование программного обеспечения"},
+    {"id": "8", "group": "team3", "name": "React"},
+    {"id": "9", "group": "team4", "name": "PostgreSQL"},
+    {"id": "10", "group": "team3", "name": "Облачная платформа"},
+    {"id": "11", "group": "team6", "name": "Amazon Web Services"},
+    {"id": "12", "group": "team3", "name": "JavaScript"},
+    {"id": "13", "group": "team1", "name": "Интерфейс пользователя"},
+    {"id": "14", "group": "team5", "name": "Архитектура программного обеспечения"},
+    {"id": "15", "group": "team4", "name": "Прототипирование"}
+  ],
+  "links": [
+    {"source": "1", "target": "2", "value": "1"},
+    {"source": "1", "target": "3", "value": "1"},
+    {"source": "1", "target": "4", "value": "1"},
+    {"source": "1", "target": "6", "value": "1"},
+    {"source": "6", "target": "8", "value": "1"},
+    {"source": "5", "target": "9", "value": "1"},
+    {"source": "10", "target": "2", "value": "1"},
+    {"source": "10", "target": "11", "value": "1"},
+    {"source": "3", "target": "12", "value": "1"},
+    {"source": "3", "target": "14", "value": "1"},
+    {"source": "3", "target": "11", "value": "1"},
+    {"source": "3", "target": "15", "value": "1"},
+    {"source": "12", "target": "8", "value": "1"},
+    {"source": "3", "target": "7", "value": "1"},
+    {"source": "1", "target": "13", "value": "1"},
+    {"source": "10", "target": "2", "value": "1"},
+    {"source": "1", "target": "5", "value": "1"},
+    {"source": "4", "target": "13", "value": "1"}
+  ]
+}
