@@ -3,7 +3,6 @@ import * as d3 from "d3";
 import { useEffect, useRef } from 'react';
 import data from './data.json'
 import { drawNetwork } from '../../drawNetwork';
-import './style.css'
 
 const width = window.innerWidth - 80
 const height = window.innerHeight
@@ -41,7 +40,7 @@ export const Graph = () => {
         <canvas
           ref={canvasRef}
           width={width}
-          height={height - 30}
+          height={height - 115}
         />
       </div>
     </div>
