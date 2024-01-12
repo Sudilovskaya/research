@@ -29,7 +29,6 @@ export const Graph = () => {
       .force('collide', d3.forceCollide().radius(80).strength(1))
       .force('charge', d3.forceManyBody())
       .force('center', d3.forceCenter(width / 2, (height - 80) / 2))
-      .stop();
 
     drawNetwork(context, width, height, nodes, links)
     simulation.tick(300)
