@@ -1,5 +1,5 @@
 {
-  "name": "glossary",
+  "name": "research",
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.74.1",
     "tls-test": "https://tls-test.npmjs.com/tls-test-1.0.0.tgz"
   },
   "scripts": {

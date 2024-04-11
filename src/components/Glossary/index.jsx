@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json'
-import './style.css'
+import './style.scss'
 
 export const Glossary = () => {
   return (

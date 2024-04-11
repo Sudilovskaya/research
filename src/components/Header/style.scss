@@ -3,9 +3,14 @@
   border-bottom: 1px solid #000000;
   display: flex;
   justify-content: center;
-}
 
-h2 {
-  font-size: 16px;
-  padding: 15px;
+  @media(max-width: 768px) {
+    justify-content: unset;
+    padding: 12px 8px 0;
+  }
+
+  h2 {
+    font-size: 16px;
+    padding: 12px;
+  }
 }

@@ -3,9 +3,10 @@ import * as d3 from "d3";
 import { useEffect, useRef } from 'react';
 import data from './data.json'
 import { drawNetwork } from '../../drawNetwork';
+import './style.scss'
 
-const width = window.innerWidth - 80
-const height = window.innerHeight
+const width = window.innerWidth - 360
+const height = window.innerHeight -56
 
 export const Graph = () => {
   const links = data.links.map((d) => ({...d}));
@@ -27,7 +28,7 @@ export const Graph = () => {
       .force('link', d3.forceLink(links).id((d) => d.id))
       .force('collide', d3.forceCollide().radius(80).strength(1))
       .force('charge', d3.forceManyBody())
-      .force('center', d3.forceCenter(width / 2, (height - 80) / 2))
+      .force('center', d3.forceCenter((width - 70) / 2, height / 2))
 
       .on('tick', () => {
         drawNetwork(context, width, height, nodes, links);
@@ -35,13 +36,17 @@ export const Graph = () => {
   }, [nodes, links]);
 
   return (
-    <div className='container'>
-      <div className='graph'>
-        <canvas
-          ref={canvasRef}
-          width={width}
-          height={height - 115}
-        />
+    <div className='graph'>
+      <div className="container">
+        {window.innerWidth >= 1220 ? (
+          <canvas
+            ref={canvasRef}
+            width={width}
+            height={height}
+          />
+        ) : (
+          <img src="https://i.ibb.co/hFtNfFx/graph.png" className='graph__image' alt="graph"/>
+        )}
       </div>
     </div>
   )

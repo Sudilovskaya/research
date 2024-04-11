@@ -1,26 +1,48 @@
+@import '../../styles/reset';
+
 body {
-    background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: #000000;
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+h2,
+h3,
+h4,
+.text-bold {
+  font-weight: 500;
 }
 
 a {
-    text-decoration: unset;
-    color: inherit;
-    appearance: none;
-}
-
-h4 {
-    margin: 0;
+  text-decoration: unset;
+  color: inherit;
+  appearance: none;
 }
 
 .container {
-    max-width: 100%;
-    padding: 30px 40px;
+  max-width: 100%;
 }
 
-.flex-container {
+p:not(.glossary p),
+.text-bold {
+  margin-bottom: 1rem;
+  max-width: 750px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+}
 
+ul,
+ol {
+  padding-left: 16px;
+}
+
+li {
+  margin-top: 10px;
+}
+
+.text-bold ~ p {
+  margin-top: 10px;
 }

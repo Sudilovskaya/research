@@ -25,7 +25,7 @@ export const drawNetwork = (
 
     // Let's iterate over each word
     words.forEach((item, index) => {
-      // Create a test line, and measure it..
+      // Create a test line, and measure it
       testLine += `${item} `
       let metrics = context.measureText(testLine);
       let testWidth = metrics.width
