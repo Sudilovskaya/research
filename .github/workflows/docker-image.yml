@@ -29,3 +29,14 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Check out repository code
+        uses: actions/checkout@v4
+
+      - run: npm i
+      - name: testing...
+        run: npm run test
