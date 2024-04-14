@@ -37,8 +37,10 @@ jobs:
         name: Check out repository code
         uses: actions/checkout@v4
       -
-        name: update packages
-        run: npm i
-      -
-        name: testing
-        run: npm run test
+        name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
