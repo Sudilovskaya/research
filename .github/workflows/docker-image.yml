@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 18
       - run: npm i
-      - run: npm run test
+      - run: npm test a
 
   build:
     runs-on: ubuntu-latest
