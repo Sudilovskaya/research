@@ -1,4 +1,4 @@
-deploy https://glossary-9rea.onrender.com/
+deploy https://research-jj5e.onrender.com/
 
 ### Production docker:
 
